@@ -5,6 +5,8 @@
 # define PI           3.14159265358979323846
 #include<mmsystem.h>
 
+
+
 //FOR SCENARIO 2
 
 GLfloat jbcloudposition = 0.0f;
@@ -450,18 +452,18 @@ void ABMovement(int value) {
 if(ABcarposition > 0.15)
    {
        ABcarposition = -1.0f;
-       // ABscale=1.0f;
+
 
    }
-    //ABscale-=0.007;
+
     ABcarposition += ABspeed;
-if(ABboatposition < 0.0)
+if(ABboatposition < -0.6)
    {
        ABboatposition = 1.0f;
 
    }
 
-    ABboatposition -= 0.03;
+    ABboatposition -= 0.01;
 	glutPostRedisplay();
 	glutTimerFunc(100, ABMovement, 0);
 }
@@ -1486,6 +1488,19 @@ GLfloat sunspeedY = 0.003f;
 bool isPaused = false;
 bool isSoundPlaying = false;
 
+
+void handleMouse(int button, int state, int x, int y) {
+	if (button == GLUT_LEFT_BUTTON)
+	{
+		  speed = 0.3f;
+	}
+	if (button == GLUT_RIGHT_BUTTON)
+	{
+
+		speed = 0.005f;
+	}
+	glutPostRedisplay();
+}
 void SpecialInput(int key, int x, int y)
 {
 switch(key)
@@ -3073,9 +3088,9 @@ void scenario3() {
    glTranslatef(0.18f,-0.05f,0.0f);
    drawBlock2();
    glPopMatrix();
-
+boat();
 glPushMatrix();
-//glTranslatef(ABboatposition,0.0f,0.0f);
+glTranslatef(ABboatposition,0.0f,0.0f);
 
    glTranslatef(0.1f, -0.25f,1.0f);
    glScalef(1.5f,1.8f,1.0f);
@@ -4473,6 +4488,7 @@ int main(int argc, char** argv) {
      glutTimerFunc(100,jbMovement,0);
     glutTimerFunc(100, Car2Movement, 0);
     glutTimerFunc(100,ABMovement,0);
+    glutMouseFunc(handleMouse);
      sound();
     glutMainLoop();
 

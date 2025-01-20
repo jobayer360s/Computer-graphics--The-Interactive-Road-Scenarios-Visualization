@@ -49,25 +49,6 @@ This project, **Interactive Road Scenarios Visualization**, is a dynamic OpenGL-
 - A C++ compiler (e.g., GCC, Visual Studio).
 - GLUT library installed.
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone <repository-link>
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd interactive-road-scenarios
-   ```
-3. Compile the code using your C++ compiler.
-   ```bash
-   g++ main.cpp -o road_visualization -lGL -lGLU -lglut
-   ```
-4. Run the executable:
-   ```bash
-   ./road_visualization
-   ```
-
----
 
 ## Contributors
 
@@ -92,10 +73,7 @@ This project, **Interactive Road Scenarios Visualization**, is a dynamic OpenGL-
 
 ---
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
 
 ## Acknowledgments
 - **Mahfujur Rahman**, Assistant Professor, AIUB, for guidance and support.
