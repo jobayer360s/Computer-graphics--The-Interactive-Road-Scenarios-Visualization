@@ -59,7 +59,7 @@ This project, **Interactive Road Scenarios Visualization**, is a dynamic OpenGL-
 
 ### **GAZI KORBANUL ISLAM**
 - 📧 Email: [santogazis9@gmail.com](mailto:santogazis9@gmail.com)
-- 📱 Phone: +8801709801663
+- 📱 Phone: +88017********
 - 🌐 LinkedIn: [Gazi Korbanul Islam](https://www.linkedin.com/in/gazi-korbanul-islam-49b799313/)
 
 ### **SAIDUR RAHMAN LABIB**
